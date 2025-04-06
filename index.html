@@ -1,24 +1,228 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="GameHub - Play the best online games for free. Enjoy racing, adventure, and multiplayer games directly in your browser." />
-    <meta name="keywords" content="online games, free games, browser games, racing games, adventure games, multiplayer games" />
-    <meta name="author" content="GameHub" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="GameHub - Free Online Games" />
-    <meta property="og:description" content="Play the best online games for free. Racing, adventure, and multiplayer games available instantly in your browser." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="GameHub - Free Online Games" />
-    <meta name="twitter:description" content="Play the best online games for free. Racing, adventure, and multiplayer games available instantly in your browser." />
-    <title>GameHub - Free Online Games</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poly Track - Play the best online games for free. Enjoy racing, adventure, and multiplayer games directly in your browser.">
+    <meta name="keywords" content="online games, free games, browser games, racing games, adventure games, multiplayer games">
+    <meta name="author" content="Poly Track">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Poly Track - Free Online Games">
+    <meta property="og:description" content="Play the best online games for free. Racing, adventure, and multiplayer games available instantly in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Poly Track - Free Online Games">
+    <meta name="twitter:description" content="Play the best online games for free. Racing, adventure, and multiplayer games available instantly in your browser.">
+    <title>Poly Track - Free Online Games</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="/" class="brand">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 11h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1zm8 0h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1zM6 19h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1zm8 0h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1z"/>
+                    </svg>
+                    <span>Poly Track</span>
+                </a>
+
+                <div class="desktop-menu">
+                    <a href="/category/racing.html" class="menu-item">Racing</a>
+                    <a href="/category/adventure.html" class="menu-item">Adventure</a>
+                    <a href="/category/running.html" class="menu-item">Running</a>
+                    <a href="/category/3d.html" class="menu-item">3D Games</a>
+                    <a href="/category/sports.html" class="menu-item">Sports</a>
+                </div>
+            </div>
+
+            <div class="navbar-right">
+                <button class="mobile-menu-button" aria-label="Toggle menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16M4 12h16m-16 6h16"/>
+                    </svg>
+                </button>
+                <button class="profile-button" aria-label="User profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="/category/racing.html" class="mobile-menu-item">Racing</a>
+            <a href="/category/adventure.html" class="mobile-menu-item">Adventure</a>
+            <a href="/category/running.html" class="mobile-menu-item">Running</a>
+            <a href="/category/3d.html" class="mobile-menu-item">3D Games</a>
+            <a href="/category/sports.html" class="mobile-menu-item">Sports</a>
+        </div>
+    </nav>
+
+    <main class="home">
+        <div class="featured-game">
+            <div class="game-container">
+                <iframe src="/games/racing-masters/index.html" title="Play Polytrack" allowfullscreen></iframe>
+                <button class="fullscreen-button" aria-label="Toggle fullscreen">
+                    <svg class="maximize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="game-info">
+                <h1>Polytrack</h1>
+                <p>A thrilling 3D racing game with dynamic tracks and multiplayer support.</p>
+                <div class="categories">
+                    <span class="category">Racing</span>
+                    <span class="category">Car</span>
+                    <span class="category">3D</span>
+                    <span class="category">Multiplayer</span>
+                </div>
+            </div>
+
+            <div class="game-tabs">
+                <button class="tab active" data-tab="howToPlay">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    How to Play
+                </button>
+                <button class="tab" data-tab="controls">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                    Controls
+                </button>
+                <button class="tab" data-tab="tips">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                    Tips
+                </button>
+                <button class="tab" data-tab="about">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    About
+                </button>
+            </div>
+
+            <div class="tab-content active" id="howToPlay">
+                <h2>How to Play</h2>
+                <p>Race against time or other players on procedurally generated tracks. Master the perfect racing line and collect power-ups to boost your performance.</p>
+            </div>
+
+            <div class="tab-content" id="controls">
+                <h2>Controls</h2>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <kbd>W/↑</kbd>
+                        <span>Accelerate</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>S/↓</kbd>
+                        <span>Brake/Reverse</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>A/←</kbd>
+                        <span>Steer Left</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>D/→</kbd>
+                        <span>Steer Right</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>SPACE</kbd>
+                        <span>Handbrake</span>
+                    </div>
+                    <div class="control-item">
+                        <kbd>SHIFT</kbd>
+                        <span>Nitro Boost</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tips">
+                <h2>Pro Tips</h2>
+                <ul class="tips-list">
+                    <li>Use nitro boost on straight sections to maximize speed</li>
+                    <li>Drift through corners by combining handbrake with steering</li>
+                    <li>Watch your tire temperature - overheating reduces grip</li>
+                    <li>Collect blue orbs for extra nitro boost</li>
+                    <li>Use slipstream behind other cars to gain speed</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="about">
+                <h2>About the Game</h2>
+                <p>Polytrack is a next-generation racing game that combines stunning visuals with precise physics simulation. Race through dynamically generated tracks that ensure every race is unique. Compete in single-player time trials or challenge other players in intense multiplayer races.</p>
+            </div>
+        </div>
+
+        <section class="popular-games">
+            <h2>Popular Games</h2>
+            <div class="games-grid">
+                <a href="/game/subway-surfers.html" class="game-card">
+                    <div class="game-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Subway Surfers">
+                        <div class="featured-badge">Featured</div>
+                    </div>
+                    <div class="game-details">
+                        <div class="game-header">
+                            <h3>Subway Surfers</h3>
+                            <svg class="gamepad-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 11h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1zm8 0h4a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1z"/>
+                            </svg>
+                        </div>
+                        <div class="game-categories">
+                            <span class="category">Running</span>
+                            <span class="category">Adventure</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- More game cards... -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Tab switching
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Fullscreen toggle
+        const fullscreenButton = document.querySelector('.fullscreen-button');
+        const gameContainer = document.querySelector('.game-container');
+
+        fullscreenButton.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                gameContainer.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
+</body>
 </html>
